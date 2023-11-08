@@ -1,7 +1,7 @@
 import './Checkout.scss';
 import { useEffect, useState } from 'react';
-// import { useSelector } from 'react-redux';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import Header2 from '../../components/Navbar/Header2/Header2';
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 import { RxCross2 } from 'react-icons/rx';
@@ -14,10 +14,9 @@ import {
 } from '../../utils/inputFormat';
 
 const Checkout = () => {
-	// const ticket = useSelector(state => state.ticket.ticket);
-	// const auth = useSelector(state => state.user.user.auth);
-	// const navigate = useNavigate();
-	const { train_number } = useParams();
+	const ticket = useSelector(state => state.ticket.ticket);
+	const auth = useSelector(state => state.user.user.auth);
+	const navigate = useNavigate();
 
 	const initialState = {
 		name: '',
@@ -89,11 +88,11 @@ const Checkout = () => {
 		}
 	};
 
-	useEffect(() => {
-		if (!auth) {
-			navigate('/login');
-		}
-	}, []);
+	// useEffect(() => {
+	// 	if (!auth) {
+	// 		navigate('/login');
+	// 	}
+	// }, []);
 	return (
 		<section className="checkout-wrapper">
 			<Header2 />

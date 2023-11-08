@@ -37,13 +37,13 @@
   color: white;
 }
 
-.left-arrow {
+.left-arrow  {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 72px;
-  top: 30px;
+  /* left: 1100px;
+  top: 30px; */
   width: 30px;
   height: 30px;
   border-top-left-radius: 50%;
@@ -57,8 +57,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 40px;
-  top: 30px;
+  /* left: 1200px;
+  bottom: 415px; */
   width: 30px;
   height: 30px;
   border-top-right-radius: 50%;
@@ -150,13 +150,16 @@
 
 .knowMore {
   display: flex;
-  justify-content: end;
+  text-align: center;
+ 
 }
 
 .knowMore p {
   font-size: 14px;
   color: #008cff;
-  font-weight: bold;
+  font-weight: 800;
+  margin-bottom: 25px;
+  /* letter-spacing: 0.1rem; */
 }
 
 .knowMore p:hover {

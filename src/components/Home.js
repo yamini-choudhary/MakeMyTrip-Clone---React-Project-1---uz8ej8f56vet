@@ -25,11 +25,14 @@ function Home() {
           margin: "auto",
           width: "100%",
           height: "100%",
-          padding: "50px 100px",
+          padding: "0px 100px",
           backgroundColor: "#f2f2f2",
         }}
       >
+        
+        <div style={{  }}>
         <Multicarousel />
+        </div>
         <div style={{ marginTop: 25 }}>
           <Slider1 />
         </div>
