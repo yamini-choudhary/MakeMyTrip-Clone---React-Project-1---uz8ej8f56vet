@@ -37,7 +37,7 @@ function Home() {
           <Slider1 />
         </div>
         <div style={{ marginTop: 25 }}>
-          <Offer />
+          {/* <Offer /> */}
         </div>
         <div style={{ marginTop: 25 }}>
           <HomeSliders />

@@ -5,10 +5,14 @@ function Offer() {
   return (
     <div className="offerDonwloadApp">
       <div className="donwloadhead">
-        <h1>Donwload App Now !</h1>
-        <p>
-          Get India's #1 travel super app, join 100 Million+ happy travellers!
-        </p>
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuXk9HZ7RWR94EY45Nj3yUGKWf9bu3dX4tfCvEcJzYasFLEGae" />
+        <div className="text-content">
+          <h1>Donwload App Now !</h1>
+          <p>
+            Download App Now ! Use code <span>WELCOMEMMT</span> and get <span>FLAT 12% OFF*</span> on your
+            first domestic flight booking
+          </p>
+        </div>
       </div>
       <div className="donwloadBox">
         {/* <p>Use code WELCOMEMMT and get upto Rs 1200 off on your first domestic flight booking</p> */}

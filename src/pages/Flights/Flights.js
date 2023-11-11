@@ -1,19 +1,13 @@
 import { useEffect, useState } from 'react';
 import FlightCard from '../../components/FlightCard/FlightCard';
 import FlightInputBox from '../../components/FlightInputBox/FlightInputBox';
-import FlightCard from '../../components/FlightCard/FlightCard';
 import './Flights.scss';
 import { FLIGHT_API_LINK, FLIGHT_API_LINK_TWO } from '../../config';
 import axios from 'axios';
-// import Error from './../../components/Error/Error';
 import Loading from '../Loading/Loading';
 import NoContent from '../NoContent/NoContent';
-import Loading from '../Error/Error';
-
-
-
-// import Loading from '../../components/Loading/Loading';
-// import NoContent from '../../components/NoContent/NoContent';
+import Header from '../../components/Navbar/Header/Header';
+// import Error from "../Error/Error";
 
 const Flights = () => {
 	const [isLoading, setIsLoading] = useState(false);
@@ -45,6 +39,8 @@ const Flights = () => {
 		getFlightsData();
 	}, []);
 	return (
+		<section>
+			<Header/>
 		<section className="flights-wrapper">
 			<div className="flights">
 				<div className="container">
@@ -68,6 +64,7 @@ const Flights = () => {
 					))
 				)}
 			</div>
+		</section>
 		</section>
 	);
 };

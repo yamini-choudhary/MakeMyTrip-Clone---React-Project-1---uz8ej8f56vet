@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import "./TopSection.scss";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import FlightInputBox from "../FlightInputBox/FlightInputBox";
 import Header from "../Navbar/Header/Header";
 // import Offers from '../../components/Offers/Offers';

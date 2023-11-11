@@ -1,0 +1,30 @@
+/* .modal-wrapper {
+    display: flex;
+    align-items: center;
+  } */
+  
+  .hotel-details {
+    flex: 1;
+    /* padding: 20px; */
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+  }
+  
+  .hotel-image {
+    width: 100%; /* Adjust the width as needed */
+    height: 100vh;
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+  
+  .book-now-button {
+    background-color: #ef6614;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  

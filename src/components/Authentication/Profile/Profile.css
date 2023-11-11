@@ -1,0 +1,63 @@
+.profile-icon-container {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-icon {
+    color: #000000;
+    /* display: flex; */
+    /* background-color: #D9D9D9; */
+    /* padding: 0.5rem;
+    border-radius: 1rem;
+    line-height: 1rem;
+    /* width: 1rem; */
+     text-align: center; 
+    &:hover {
+      cursor: pointer;
+      color: #EF6614;
+    }
+  }
+  
+  .auth-modal {
+    border-radius: 5px;
+    background-color: #ece8e8;
+    padding: 1.2rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    right: 4rem;
+    top: 62px;
+  }
+  .user-name{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+
+  }
+  .profile-btn{
+    color: black;
+  }
+  .profile-login-btn{
+    /* color: black; */
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #EF6614;
+    font-size: 15px;
+  }
+  .profile-signup-btn{
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #EF6614;
+  }

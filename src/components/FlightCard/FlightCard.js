@@ -1,18 +1,17 @@
-// import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import './FlightCard.scss';
 import date from 'date-and-time';
-
-// import { useNavigate } from 'react-router-dom';
-// import { bookTicket } from '../../redux/slice/ticketSlice';
+import { useNavigate } from 'react-router-dom';
+import { bookTicket } from '../../redux/slice/ticketSlice';
 
 const FlightCard = ({ flight }) => {
-// 	const dispatch = useDispatch();
-// 	const navigate = useNavigate();
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
 
-	// const bookHandler = () => {
-	// 	dispatch(bookTicket(flight));
-	// 	navigate('/checkout');
-	// };
+	const bookHandler = () => {
+		dispatch(bookTicket(flight));
+		navigate(`/flights/:${flight._id}`);
+	};
 
 	return (
 		<section className="flight-card-wrapper">
@@ -108,9 +107,9 @@ const FlightCard = ({ flight }) => {
 					</div>
 				</div>
 			</div>
-			{/* <button onClick={bookHandler} className="book-now">
+			<button onClick={bookHandler} className="book-now">
 				Book Now
-			</button> */}
+			</button>
 		</section>
 	);
 };

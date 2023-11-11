@@ -38,10 +38,11 @@ const Trains = () => {
     getTrainsData();
   }, []);
   return (
+    <section>
+      <Header/>
     <section className="trains-wrapper">
       <div className="trains">
         <div className="container">
-          {/* <Header/> */}
           <TrainInputBox
             trains={trains}
             setFilteredTrains={setFilteredTrains}
@@ -64,6 +65,7 @@ const Trains = () => {
           )}
         </div>
       }
+    </section>
     </section>
   );
 };

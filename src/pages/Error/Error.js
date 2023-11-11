@@ -1,6 +1,6 @@
 import './Error.scss';
 import ErrorInputBox from './../../components/ErrorInputBox/ErrorInputBox';
-import Header2 from '../../components/Header2/Header2';
+
 
 const Error = () => {
 	return (
