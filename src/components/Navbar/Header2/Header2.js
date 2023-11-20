@@ -2,7 +2,8 @@ import "./Header2.scss";
 import { Link, NavLink } from "react-router-dom";
 // import logo from './../../assets/img/logo2.png';
 // import makemytrip2 from './../../assets/img/makemytrip2.svg';
-import { BiChevronDown } from 'react-icons/bi';
+// import { BiChevronDown } from 'react-icons/bi';
+import { Profile } from "../../Authentication/Profile/Profile";
 // import { useSelector } from 'react-redux';
 import {
   // FaAngleDown,
@@ -137,7 +138,7 @@ const Header2 = () => {
 						)}
 					</Link>
 				</div> */}
-        <div className="right-sec">
+        {/* <div className="right-sec">
           <div className="login">
             <img
               src="https://raw.githubusercontent.com/GitsOfVivek/MakeMyTrip-Clone/b862e8a1c392c93ab828bd47fc8b73e1aaf7e7f0/client/src/assets/img/makemytrip2.svg"
@@ -147,6 +148,9 @@ const Header2 = () => {
             <span>Login or Create Account</span>
             <BiChevronDown className="down-arrow" />
           </div>
+        </div> */}
+        <div>
+          <Profile/>
         </div>
       </div>
     </section>

@@ -3,10 +3,13 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { DoneAll } from "@mui/icons-material";
-import VerifiedIcon from "@mui/icons-material/Verified";
+// import VerifiedIcon from "@mui/icons-material/Verified";
 import { useNavigate } from "react-router-dom";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// import HotelInputBox from "../HotelInputBox/HotelInputBox";
+
+import HotelInputBox from "../HotelInputBox/HotelInputBox";
 // import Header from "../Navbar/Header/Header";
 // import TopSection from "../TopSection/TopSection";
 
@@ -41,6 +44,7 @@ const Hotel = () => {
   return (
     <section>
       {/* <TopSection/> */}
+      <HotelInputBox/>
       <main className="hotel-container">
         <section className="hotel-data-show">
           <div className="right-nav">
@@ -54,7 +58,14 @@ const Hotel = () => {
                 </div>
 
                 <div className="hotel-left-data">
+                  <div className="name-star">
                   <h1 className="hotel-name">{hotelData.name}</h1>
+                  <FontAwesomeIcon className="star" icon={faStar} />
+                  <FontAwesomeIcon className="star" icon={faStar} />
+                  <FontAwesomeIcon className="star" icon={faStar} />
+                  <FontAwesomeIcon  className="star"icon={faStar} />
+                  <FontAwesomeIcon className="low-star" icon={faStar} />
+                  </div>
                   <p className="hotel-location">
                     <LocationOnIcon
                       style={{ fontSize: "18px" }}
@@ -66,10 +77,10 @@ const Hotel = () => {
                     <DoneAll className="doneall" style={{ fontSize: "18px" }} />
                     {hotelData.rooms[0].cancellationPolicy}
                   </p>
-                  <button className="discount-badge">
+                  {/* <button className="discount-badge">
                     <VerifiedIcon style={{ fontSize: "16px" }}></VerifiedIcon>{" "}
                     EMTSTAY Discount Applied
-                  </button>
+                  </button> */}
                   {/* <p className="hotel-bedDetail">
                     {hotelData.rooms[0].bedDetail}
                   </p> */}

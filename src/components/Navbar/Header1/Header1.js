@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 // import offer from './../../assets/img/discount.jpeg';
 // import makemytrip from './../../assets/img/makemytrip.svg';
 // import bag from './../../assets/img/bag.png';
-import { BiChevronDown } from 'react-icons/bi';
+// import { BiChevronDown } from 'react-icons/bi';
+import { Profile } from "../../Authentication/Profile/Profile";
 // import { useSelector } from 'react-redux';
 
 const Header1 = () => {
@@ -67,7 +68,7 @@ const Header1 = () => {
 							</>
 						)}
 					</Link> */}
-          <div className="login">
+          {/* <div className="login">
             <img
               src="https://raw.githubusercontent.com/GitsOfVivek/MakeMyTrip-Clone/b862e8a1c392c93ab828bd47fc8b73e1aaf7e7f0/client/src/assets/img/makemytrip.svg"
               className="cropped-img"
@@ -75,6 +76,9 @@ const Header1 = () => {
             />{" "}
             <span>Login or Create Account</span>
             <BiChevronDown className="down-arrow" />
+          </div> */}
+          <div>
+            <Profile/>
           </div>
         </div>
       </div>
