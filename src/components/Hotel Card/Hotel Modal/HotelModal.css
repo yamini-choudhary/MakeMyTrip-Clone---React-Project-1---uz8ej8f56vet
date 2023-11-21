@@ -111,4 +111,11 @@
 .hotel-modal-container{
   width: 100%;
 }
+.isLoading {
+  text-align: center;
+  color:#17a2b8 ;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 30px;
+}
 

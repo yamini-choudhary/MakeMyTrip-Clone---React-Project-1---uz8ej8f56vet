@@ -4,7 +4,7 @@ const NoContent = ({ data }) => {
 	return (
 		<section className="nocontent-wrapper">
 			<div className="nocontent">
-				<div>No {data} Found!</div>
+				<div>No {data} Found !!</div>
 			</div>
 		</section>
 	);

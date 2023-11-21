@@ -17,6 +17,7 @@ const HotelModal = (Hotel) => {
     navigate(`/hotels/checkout`);
   };
   const [hotel, setHotel] = useState({});
+  const[isLoading,setIsLoading]=useState(false);
   const { id } = useParams();
   const config = {
     headers: {
@@ -28,6 +29,7 @@ const HotelModal = (Hotel) => {
 
   const getApi = async () => {
     try {
+      setIsLoading(true);
       const response = await axios.get(
         `https://academics.newtonschool.co/api/v1/bookingportals/hotel/${id}`,
         config
@@ -36,6 +38,8 @@ const HotelModal = (Hotel) => {
       setHotel(response.data.data); // Assuming the response contains only one hotel
     } catch (error) {
       console.log("err", error);
+    }finally{
+      setIsLoading(false);
     }
   };
 
@@ -44,8 +48,11 @@ const HotelModal = (Hotel) => {
   }, []);
 
   return (
+    <>
+    {isLoading ? (
+      <div className="isLoading">Loading...</div>
+    ) : (
     <section className="modal">
-      {/* <Header2 /> */}
       <div className="modal-wrapper">
         <div className="hotel-modal-container">
           <img
@@ -148,6 +155,8 @@ const HotelModal = (Hotel) => {
         </div>
       </div>
     </section>
+    )}
+    </>
   );
 };
 
