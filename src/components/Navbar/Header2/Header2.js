@@ -1,17 +1,7 @@
 import "./Header2.scss";
 import { Link, NavLink } from "react-router-dom";
-// import logo from './../../assets/img/logo2.png';
-// import makemytrip2 from './../../assets/img/makemytrip2.svg';
-// import { BiChevronDown } from 'react-icons/bi';
 import { Profile } from "../../Authentication/Profile/Profile";
-// import { useSelector } from 'react-redux';
-import {
-  // FaAngleDown,
-  // FaAngleRight,
-  FaTrain,
-  // FaBars,
-  // FaTimes,
-} from "react-icons/fa";
+import { FaTrain } from "react-icons/fa";
 import {
   MdOutlineFlight,
   MdOutlineMapsHomeWork,
@@ -23,8 +13,6 @@ import { AiOutlineCar } from "react-icons/ai";
 import { VscGraphLine } from "react-icons/vsc";
 
 const Header2 = () => {
-  // const { auth, userData } = useSelector(state => state.user.user);
-
   return (
     <section className="header2-wrapper">
       <div className="header2">
@@ -119,38 +107,8 @@ const Header2 = () => {
             </NavLink>
           </div>
         </section>
-        {/* <div className="right-sec">
-					<Link className="login" to={auth ? '/profile' : '/login'}>
-						{auth ? (
-							<div className="user-name">
-								{userData?.displayName?.split(' ')?.[0]}
-							</div>
-						) : (
-							<>
-								<img
-									src='https://raw.githubusercontent.com/GitsOfVivek/MakeMyTrip-Clone/b862e8a1c392c93ab828bd47fc8b73e1aaf7e7f0/client/src/assets/img/makemytrip2.svg'
-									className="cropped-img"
-									alt="myTrip"
-								/>{' '}
-								<span>Login or Create Account</span>
-								<BiChevronDown className="down-arrow" />
-							</>
-						)}
-					</Link>
-				</div> */}
-        {/* <div className="right-sec">
-          <div className="login">
-            <img
-              src="https://raw.githubusercontent.com/GitsOfVivek/MakeMyTrip-Clone/b862e8a1c392c93ab828bd47fc8b73e1aaf7e7f0/client/src/assets/img/makemytrip2.svg"
-              className="cropped-img"
-              alt="myTrip"
-            />{" "}
-            <span>Login or Create Account</span>
-            <BiChevronDown className="down-arrow" />
-          </div>
-        </div> */}
         <div>
-          <Profile/>
+          <Profile />
         </div>
       </div>
     </section>

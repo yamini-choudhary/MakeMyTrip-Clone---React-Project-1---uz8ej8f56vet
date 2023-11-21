@@ -8,8 +8,8 @@
   position: absolute;
   top: 200px;
   right: 150px;
-  width: 300px;
-  height: 350px;
+  width: 330px;
+  height: 400px;
   background-color: white;
   border-radius: 8px;
   display: flex;
@@ -19,14 +19,18 @@
 
 .hotel-modal-image {
   width: 100%;
-  height: 100px;
+  height: 150px;
   object-fit: cover;
   border-radius: 8px;
+}
+.hotel-modal h3{
+  margin-top: 12px;
+  margin-left: 10px;
 }
 
 .hotel-image {
   width: 100%;
-  height: 400px;
+  height: 460px;
   object-fit: cover;
 }
 
@@ -41,7 +45,7 @@
   outline: none;
   color: white;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 60px;
   background: var(--color-btn-primary-bg);
   cursor: pointer;
   border: none;
@@ -50,23 +54,18 @@
   color: #fff;
   font-size: 12px;
   border-radius: 4px;
+  box-shadow: 0 2px 5px #00000059;
 }
-
-
 .hotel-modal-left-data {
   text-align: left;
+  width: 70%;
+  margin-left: 10px;
 }
 
 .hotel-modal-right-data {
   text-align: right;
+  width: 40%;
 }
-
-/* Additional styles for alignment if needed */
-.hotel-modal-left-data,
-.hotel-modal-right-data {
-  flex: 1;
-}
-
 .outer-div {
   width: 200px;
   height: 200px;
@@ -94,5 +93,22 @@
 .para {
   font-weight: 800;
   margin-left: 50px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
+.hotel-modal-name{
+  width: 100vw;
+  height: 60px;
+  /* z-index: 1; */
+  background-color: white;
+  position: absolute;
+  bottom: 288px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 8px 0px 0px 20px;
+}
+.hotel-modal-container{
+  width: 100%;
+}
+

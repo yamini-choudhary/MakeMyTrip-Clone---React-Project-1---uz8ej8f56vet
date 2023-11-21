@@ -455,11 +455,11 @@ const Checkout = () => {
 									</div>
 									<div
 										onClick={() => {
-											setSelectedPromoCode('VIVEK-50');
-											setInputText('VIVEK50');
+											setSelectedPromoCode('YAMINI-50');
+											setInputText('YAMINI50');
 										}}
 										className="code">
-										<span>VIVEK50</span>
+										<span>YAMINI50</span>
 										<p>
 											Lorem ipsum dolor sit amet
 											consectetur adipisicing elit.

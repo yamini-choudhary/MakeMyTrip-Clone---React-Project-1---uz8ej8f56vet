@@ -7,11 +7,11 @@ import { DoneAll } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import Header2 from "../../Navbar/Header2/Header2";
+import HotelInputBox from "../../HotelInputBox/HotelInputBox";
+import Header from "../../Navbar/Header/Header";
+// import TopSection from "../../TopSection/TopSection";
 
-
-import HotelInputBox from "../HotelInputBox/HotelInputBox";
-// import Header from "../Navbar/Header/Header";
-// import TopSection from "../TopSection/TopSection";
 
 const Hotel = () => {
   const [hotel, setHotel] = useState([]);
@@ -43,12 +43,12 @@ const Hotel = () => {
   }, []);
   return (
     <section>
-      {/* <TopSection/> */}
+      <Header/>
       <HotelInputBox/>
       <main className="hotel-container">
         <section className="hotel-data-show">
           <div className="right-nav">
-            <h3>Hotels in Delhi (454)</h3>
+            <h3>Available Flights</h3>
           </div>
           {hotel.length > 0 &&
             hotel.map((hotelData) => (
@@ -73,17 +73,14 @@ const Hotel = () => {
                     {hotelData.location}
                   </p>
                   <p className="hotel-amenities">{hotelData.amenities + " "}</p>
+                  
                   <p className="hotel-cancellation">
                     <DoneAll className="doneall" style={{ fontSize: "18px" }} />
                     {hotelData.rooms[0].cancellationPolicy}
                   </p>
-                  {/* <button className="discount-badge">
-                    <VerifiedIcon style={{ fontSize: "16px" }}></VerifiedIcon>{" "}
-                    EMTSTAY Discount Applied
-                  </button> */}
-                  {/* <p className="hotel-bedDetail">
-                    {hotelData.rooms[0].bedDetail}
-                  </p> */}
+                  <button className="hotel-bedDetail">
+                    {hotelData.rooms[0].bedDetail} | {hotelData.rooms[0].roomType}
+                  </button>
                 </div>
 
                 <div className="hotel-right-data">

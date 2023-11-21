@@ -1,16 +1,8 @@
 import "./Header1.scss";
 import { Link } from "react-router-dom";
-// import logo from './../../assets/img/logo.png';
-// import offer from './../../assets/img/discount.jpeg';
-// import makemytrip from './../../assets/img/makemytrip.svg';
-// import bag from './../../assets/img/bag.png';
-// import { BiChevronDown } from 'react-icons/bi';
 import { Profile } from "../../Authentication/Profile/Profile";
-// import { useSelector } from 'react-redux';
 
 const Header1 = () => {
-  // const { auth, userData } = useSelector(state => state.user.user);
-
   return (
     <section className="header1-wrapper">
       <div className="header1">
@@ -78,7 +70,7 @@ const Header1 = () => {
             <BiChevronDown className="down-arrow" />
           </div> */}
           <div>
-            <Profile/>
+            <Profile />
           </div>
         </div>
       </div>

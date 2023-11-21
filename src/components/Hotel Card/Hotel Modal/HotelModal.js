@@ -1,11 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Header2 from "../../Navbar/Header2/Header2";
-import { DoneAll } from "@mui/icons-material";
+// import Header2 from "../../Navbar/Header2/Header2";
 import "./HotelModal.css";
 import { useDispatch } from "react-redux";
 import { bookTicket } from "../../../redux/slice/ticketSlice";
+import { faCheck, faStar, faStarHalfStroke } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HotelModal = (Hotel) => {
   const dispatch = useDispatch();
@@ -44,13 +45,22 @@ const HotelModal = (Hotel) => {
 
   return (
     <section className="modal">
-      <Header2 />
+      {/* <Header2 /> */}
       <div className="modal-wrapper">
-        <img
-          src={hotel.images && hotel.images[0]}
-          alt={hotel.name}
-          className="hotel-image"
-        />
+        <div className="hotel-modal-container">
+          <img
+            src={hotel.images && hotel.images[0]}
+            alt={hotel.name}
+            className="hotel-image"
+          />
+          <div className="hotel-modal-name">
+            {hotel.name}...  {hotel.location}  <FontAwesomeIcon style={{ fontSize: "22px",marginBottom:"2px " }} icon={faStar} />
+            <FontAwesomeIcon style={{ fontSize: "22px",marginBottom:"2px "}} icon={faStar} />
+            <FontAwesomeIcon style={{ fontSize: "22px",marginBottom:"2px " }} icon={faStar} />
+            <FontAwesomeIcon style={{ fontSize: "22px",marginBottom:"2px " }} icon={faStar} />
+            <FontAwesomeIcon style={{ fontSize: "22px",marginBottom:"2px " }} icon={faStarHalfStroke}  />
+          </div>
+        </div>
         <div className="hotel-modal">
           <div>
             <img
@@ -59,23 +69,52 @@ const HotelModal = (Hotel) => {
               className="hotel-modal-image"
             />
           </div>
+
           <h3>Standard Room, {hotel.rooms?.[0]?.bedDetail}</h3>
-          <div className="hotel-modal-content"></div>
-          <div className="hotel-modal-left-data">
-            <p className="hotel-cancellation">
-              <DoneAll className="doneall" style={{ fontSize: "18px" }} />
-              {hotel.rooms?.[0]?.cancellationPolicy}
-            </p>
-          </div>
-          <div className="hotel-modal-right-data">
-            <p className="per-night"> Per Night</p>
-            <p className="hotel-price">रु {hotel.rooms?.[0]?.price}</p>
-            <p className="hotel-cost-tax">
-              + रु {hotel.rooms?.[0]?.costDetails.taxesAndFees} Taxes & fees
-            </p>
+          <div className="hotel-modal-content">
+            <div className="hotel-modal-left-data">
+              <p
+                className="hotel-cancellation"
+                style={{
+                  color: "#17a2b8",
+                  fontWeight: "600",
+                  marginTop: "6px",
+                }}
+              >
+                <FontAwesomeIcon
+                  style={{
+                    marginTop: "3px",
+                    marginRight: "3px",
+                    color: "#17a2b8",
+                  }}
+                  icon={faCheck}
+                />
+                {hotel.rooms?.[0]?.cancellationPolicy}
+              </p>
+              <p className="hotel-cancellation" style={{ fontWeight: "600" }}>
+                <FontAwesomeIcon
+                  style={{ marginTop: "3px", marginRight: "3px" }}
+                  icon={faCheck}
+                />
+                Room With Free Cancellation
+              </p>
+            </div>
+            <div className="hotel-modal-right-data">
+              <p style={{ fontSize: "12px", padding: "2px" }}> Per Night</p>
+              <p
+                style={{ fontSize: "18px", fontWeight: "600", padding: "2px" }}
+              >
+                रु {hotel.rooms?.[0]?.price}
+              </p>
+              <p style={{ fontSize: "10px", padding: "2px", color: "grey" }}>
+                + रु {hotel.rooms?.[0]?.costDetails.taxesAndFees} Taxes & fees
+              </p>
+            </div>
           </div>
 
-          <button className="book-now-button" onClick={bookHandler}>BOOK THIS NOW</button>
+          <button className="book-now-button" onClick={bookHandler}>
+            BOOK THIS NOW
+          </button>
         </div>
       </div>
       <p className="para">Discover The Best Of Luxury</p>

@@ -11,6 +11,8 @@ import { AuthProvider } from "./provider/AuthProvider";
 import { Login } from "./Authentication/Login/Login";
 import { SignUp } from "./Authentication/SignUp/SignUp";
 import { AuthNavigator } from "./navigator/AuthNavigator";
+import Blank from "./Blank";
+import ErrorInputBox from "../pages/ErrorInputBox/ErrorInputBox";
 
 function App() {
   return (
@@ -18,15 +20,17 @@ function App() {
       <AuthProvider>
       <Routes>
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/blank" element={<Blank />} />
         <Route path="/login" element={<Login />} />
         <Route path="/trains" element={<Trains />} />
-        <Route path="/trains/:id" element={<Checkout />} />
+        <Route path="/trains/:id" element={<AuthNavigator><Checkout /></AuthNavigator>} />
         <Route path="/flights" element={<Flights />} />
         <Route path="/flights/:id" element={<AuthNavigator><Checkout /></AuthNavigator>} />
         <Route path="/hotels" element={<Hotel />} />
         <Route path="/hotels/:id" element={<HotelModal />} />
-        <Route path="/hotels/checkout" element={<HotelCheckout />} />
-        <Route path="" element={<Home />} />
+        <Route path="/hotels/checkout" element={<AuthNavigator><HotelCheckout /></AuthNavigator>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<ErrorInputBox />} />
       </Routes>
       </AuthProvider>
     </div>

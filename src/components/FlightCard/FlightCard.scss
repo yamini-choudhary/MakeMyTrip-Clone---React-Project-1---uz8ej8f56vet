@@ -1,135 +1,133 @@
 .flight-card-wrapper {
-	height: 100px;
-	width: 80%;
-	margin: auto;
-	background: #fff;
-	box-shadow: 2px 0px 10px #2727275b;
-	border-radius: 10px;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	transition: all 0.3s ease;
-	z-index: 999;
+  height: 100px;
+  width: 80%;
+  margin: auto;
+  background: #fff;
+  box-shadow: 2px 0px 10px #2727275b;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  z-index: 999;
 
-	.flight-card {
-		height: 100%;
-		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+  .flight-card {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-		.sec {
-			width: 100%;
-			padding: 1rem 2rem;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			// flex-direction: column;
-			
-			gap: 20px;
-			.flight-icon{
-				font-size: 30px;
-				color: blue;
-				// background-color: white;
-				width: 40px;
-			}
+    .sec {
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // flex-direction: column;
 
-			div {
-				width: 100%;
-				display: flex;
-				align-items: flex-start;
-				justify-content: center;
-				flex-direction: column;
-				.airline{
-					display: flex;
-					flex-direction: row;
-					justify-content: center;
-					align-items: center;
-					
-				}
-				.val {
-					width: 100%;
-					display: flex;
-					font-size: 18px;
-					font-weight: 700;
-				}
-				.duration{
-					font-size: 13px;
-					// font-weight: 700;
-				}
-				.duration-line{
-					width: 60px;
-					height: 2px;
-					// background-color: #20c997;
-					background-color: #fd7e14;
-					margin-top: 6px;
-				}
-				.departure-line{
-					width: 4px;
-					color: #20c997;;
-					margin: 10px;
-				}
-				.date {
-					display: flex;
-					align-items: flex-start;
-					justify-content: center;
-					flex-direction: column;
-					// color: #0a8396;
-					color: #17a2b8;
-					
-					
-					.departureTime{
-						font-size: 13px;
-						margin-top: 4px;
-					}
+      gap: 20px;
+      .flight-icon {
+        font-size: 30px;
+        color: blue;
+        // background-color: white;
+        width: 40px;
+      }
 
-					& > div {
-						display: flex;
-						align-items: baseline;
-						justify-content: flex-start;
-						flex-direction: row;
-						gap:5px;
-						font-size: 1rem;
-						font-weight: 700;
-						span {
-							font-size: 1rem;
-							font-weight: 700;
-						}
-						p {
-							font-size: 0.7rem;
-						}
-					}
-				}
-			}
-		}
-	}
-	.book-now {
-		position: absolute;
-		top: 50px;
-		// left: 50%;
-		right: 1px;
-		transform: translate(-50%, -15px);
-		padding: 8px 20px;
-		background: var(--color-btn-primary-bg);
-		cursor: pointer;
-		outline: none;
-		border: none;
-		border-radius: 100px;
-		transition: transform 0.3s ease;
-		font-weight: 700;
-		font-size: 1rem;
-		color: #fff;
+      div {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        .airline {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        .val {
+          width: 100%;
+          display: flex;
+          font-size: 18px;
+          font-weight: 700;
+        }
+        .duration {
+          font-size: 13px;
+          // font-weight: 700;
+        }
+        .duration-line {
+          width: 60px;
+          height: 2px;
+          // background-color: #20c997;
+          background-color: #fd7e14;
+          margin-top: 6px;
+        }
+        .departure-line {
+          width: 4px;
+          color: #20c997;
+          margin: 10px;
+        }
+        .date {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+        //   color: black;
+          color: #17a2b8;
 
-		&:hover {
-			background: var(--color-btn-primary-bg-hover);
-		}
-	}
+          .departureTime {
+            font-size: 13px;
+            margin-top: 4px;
+          }
 
-	&:hover {
-		transform: scale(1.03);
-		background: #f3f9ff;
-		background: #0A223D;
-		color: white;
-	}
+          & > div {
+            display: flex;
+            align-items: baseline;
+            justify-content: flex-start;
+            flex-direction: row;
+            gap: 5px;
+            font-size: 1rem;
+            font-weight: 700;
+            span {
+              font-size: 1rem;
+              font-weight: 700;
+            }
+            p {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .book-now {
+    position: absolute;
+    top: 50px;
+    // left: 50%;
+    right: 1px;
+    transform: translate(-50%, -15px);
+    padding: 8px 20px;
+    background: var(--color-btn-primary-bg);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    transition: transform 0.3s ease;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+
+    &:hover {
+      background: var(--color-btn-primary-bg-hover);
+    }
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    // background: #f3f9ff;
+    background: #0a223d;
+    color: white;
+  }
 }

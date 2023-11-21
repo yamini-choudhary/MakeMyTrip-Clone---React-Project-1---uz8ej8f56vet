@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../provider/AuthProvider";
 import { getHeaderWithProjectId } from "../../../utils/service";
 import axios from "axios";
-import "../Login&SignUp.css";
+// import "../Login&SignUp.css";
 
 export const SignUp = () => {
   const [isRegistered, setIsRegistered] = useState(false);
