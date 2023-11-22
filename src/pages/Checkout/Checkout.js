@@ -101,7 +101,7 @@ const Checkout = () => {
 				<div className="input-box-wrapper">
 					<div className="input-box">
 						<div className="ticket-info">
-							{ticket?.airlineName ? (
+							{ticket?.airline ? (
 								<div className="complete">
 									<div className="heading">
 										Complete your booking
@@ -109,13 +109,13 @@ const Checkout = () => {
 									<div className="details">
 										<div>
 											<span>Airline : </span>
-											<span>{ticket?.airlineName}</span>
+											<span>{ticket?.airline}</span>
 										</div>
 										<div>
 											<span>From : </span>
-											<span>{ticket?.from}</span>
+											<span>{ticket?.source}</span>
 										</div>
-										<div>
+										{/* <div>
 											<span>Departure : </span>
 											<span>
 												{
@@ -127,8 +127,8 @@ const Checkout = () => {
 														?.departureTime
 												}
 											</span>
-										</div>
-										{ticket?.return && (
+										</div> */}
+										{/* {ticket?.return && (
 											<div>
 												<span>Return : </span>
 												<span>
@@ -136,14 +136,14 @@ const Checkout = () => {
 													{ticket?.return?.returnTime}
 												</span>
 											</div>
-										)}
+										)} */}
 										<div>
 											<span>Duration : </span>
 											<span>{ticket?.duration}</span>
 										</div>
 										<div>
 											<span>To : </span>
-											<span>{ticket?.to}</span>
+											<span>{ticket?.destination}</span>
 										</div>
 									</div>
 								</div>

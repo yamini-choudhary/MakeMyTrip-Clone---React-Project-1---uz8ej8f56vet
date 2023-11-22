@@ -17,41 +17,38 @@
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    // gap: 20px;
 
     .sec {
       width: 100%;
-      padding: 1rem 2rem;
+      // padding: 1rem 0rem 1rem 4rem ;
       display: flex;
       align-items: center;
       justify-content: center;
-      // flex-direction: column;
-
-      gap: 20px;
+      gap: 100px;
       .flight-icon {
         font-size: 30px;
         color: blue;
         // background-color: white;
         width: 40px;
       }
-
       div {
         width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        .airline {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-        }
         .val {
           width: 100%;
           display: flex;
           font-size: 18px;
           font-weight: 700;
+        }
+        .ticket-price{
+          font-size: 22px;
+          font-weight: 700;
+          margin-left: 200px;
         }
         .duration {
           font-size: 13px;
@@ -64,40 +61,8 @@
           background-color: #fd7e14;
           margin-top: 6px;
         }
-        .departure-line {
-          width: 4px;
-          color: #20c997;
-          margin: 10px;
-        }
-        .date {
-          display: flex;
-          align-items: flex-start;
-          justify-content: center;
-          flex-direction: column;
-        //   color: black;
-          color: #17a2b8;
-
-          .departureTime {
-            font-size: 13px;
-            margin-top: 4px;
-          }
-
-          & > div {
-            display: flex;
-            align-items: baseline;
-            justify-content: flex-start;
-            flex-direction: row;
-            gap: 5px;
-            font-size: 1rem;
-            font-weight: 700;
-            span {
-              font-size: 1rem;
-              font-weight: 700;
-            }
-            p {
-              font-size: 0.8rem;
-            }
-          }
+        img{
+          margin-left: 50px;
         }
       }
     }
