@@ -1,7 +1,7 @@
-// export const FLIGHT_API_LINK =
-//   'https://wild-plum-shark-toga.cyclic.app/api/v1/flights';
 export const FLIGHT_API_LINK =
-  'https://academics.newtonschool.co/api/v1/bookingportals/flight';
+  'https://wild-plum-shark-toga.cyclic.app/api/v1/flights';
+// export const FLIGHT_API_LINK =
+//   'https://academics.newtonschool.co/api/v1/bookingportals/flight';
 export const FLIGHT_API_LINK_TWO =
   'https://content.newtonschool.co/v1/pr/63b85b1209f0a79e89e17e3a/flights';
 

@@ -55,8 +55,8 @@ export const Profile = () => {
                 onClick={() => navigateHandler("/myProfile")}
               >
                 My Profile
-              </button>
-              <button onClick={logout}>Logout</button>
+              </button >
+              <button className="profile-logout-btn" onClick={logout}>Logout</button>
             </>
           ) : (
             <>

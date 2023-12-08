@@ -5,20 +5,6 @@
   align-items: center;
 }
 
-.profile-icon {
-  color: white;
-  /* display: flex; */
-  /* background-color: #D9D9D9; */
-  /* padding: 0.5rem;
-    border-radius: 1rem;
-    line-height: 1rem;
-    /* width: 1rem; */
-  text-align: center;
-  &:hover {
-    cursor: pointer;
-    color: #ef6614;
-  }
-}
 
 .auth-modal {
   border-radius: 5px;
@@ -39,16 +25,31 @@
   cursor: pointer;
 }
 .profile-btn {
-  color: black;
-}
-.profile-login-btn {
-  color: #fff;
-  /* color: #ffffff; */
+  box-shadow: 0 2px 5px #00000059;
+  color: #ffffff;
   border-radius: 5px;
   padding: 4px 8px;
   border: none;
   cursor: pointer;
-  /* background-color: #ef6614; */
+  background: var(--color-btn-primary-bg);
+  font-size: 15px;
+}
+.profile-logout-btn {
+  box-shadow: 0 2px 5px #00000059;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+  background: var(--color-btn-primary-bg);
+  font-size: 15px;
+}
+.profile-login-btn {
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
   background: var(--color-btn-primary-bg);
   font-size: 15px;
 }

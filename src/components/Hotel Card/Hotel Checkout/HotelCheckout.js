@@ -433,12 +433,12 @@ const HotelCheckout = () => {
 
                   <div
                     onClick={() => {
-                      setSelectedPromoCode("SURAJ-20");
-                      setInputText("SURAJ20");
+                      setSelectedPromoCode("YAMINI-20");
+                      setInputText("YAMINI20");
                     }}
                     className="code"
                   >
-                    <span>SURAJ20</span>
+                    <span>YAMINI20</span>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
@@ -502,7 +502,7 @@ const HotelCheckout = () => {
                     ? "Train Number"
                     : "Hotel Name"}
                 </span>
-                <span style={{ color: "#ef6614" }}>
+                <span style={{ color: "#17a2b8",fontWeight:"700" }}>
                   {ticket?.airlineName
                     ? ticket?.airlineName
                     : ticket?.train_number
@@ -512,7 +512,7 @@ const HotelCheckout = () => {
               </div>
               <div>
                 <span>Amount</span>
-                <span style={{ color: "#ef6614" }}>
+                <span style={{ color: "#17a2b8",fontWeight:"700" }}>
                   ₹{" "}
                   {(
                     (totalAmount *
