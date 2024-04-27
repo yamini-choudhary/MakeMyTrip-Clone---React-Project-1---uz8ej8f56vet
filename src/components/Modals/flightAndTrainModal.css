@@ -1,0 +1,9 @@
+
+.cityNameSearchInput:focus{
+    outline: none;
+}
+.cityList{
+    width: 100%;
+    max-height: 14rem;
+    min-height: 3rem;  
+}

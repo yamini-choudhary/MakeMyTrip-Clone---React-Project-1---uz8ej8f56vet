@@ -1,0 +1,21 @@
+.home{
+    background-color: #F2F2F2;
+}
+.homeBox{
+    height: fit-content;
+}
+.mainBannerImg{
+    width: 100vw;
+    min-height: 50vh;
+    background-image: url("https://imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/bg6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width:1200px){
+    .mainBannerImg{
+        width: 100vw;
+        min-height: 70vh;
+    }
+    
+}

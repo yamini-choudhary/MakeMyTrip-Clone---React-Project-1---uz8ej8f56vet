@@ -1,0 +1,26 @@
+.trainbookingBox{
+    grid-template-columns: 2fr 2fr 1fr;
+    width: 75rem;
+}
+.trainReviewBox{
+    grid-template-columns: 3fr 1fr;
+}
+.availability{
+    width: 15rem;
+}
+.trainWidth{
+    min-width: 40rem;
+    max-width: 75rem;
+}
+.fareWidth{
+    min-width: 15rem;
+    max-width: 20rem;
+}
+.mobTicketTypeCard{
+    width: 10rem;
+}
+@media (max-width:1300px){
+    .trainbookingBox{
+        width: 90vw;
+    }
+}

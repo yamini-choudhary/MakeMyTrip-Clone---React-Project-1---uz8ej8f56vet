@@ -1,0 +1,43 @@
+.busBookingBox{
+    grid-template-columns: 2fr 2fr 1fr;
+    width: 75rem;
+}
+.ratingBack{
+    background-color: #23A596;
+}
+.lightBlueBack{
+    background-color: #EAF5FF;
+}
+.amenityBox{
+    border-radius: 10px;
+    color: #008CFF;
+    background-color: #EAF5FF;
+}
+.hoverLightBlue{
+    transition: .8s;
+}
+.hoverLightBlue:hover{
+    background-color: #EAF5FF;
+    border: 1px solid #008CFF;
+}
+.allBusCardMainBox{
+    max-width: 85vw;
+    margin: auto;
+    grid-template-columns: 2fr 6fr;
+}
+.sortPriceBox{
+    border: 1px solid #008CFF;
+    color: #008CFF;
+    background-color: #EAF5FF;
+}
+.mobSortPriceBox{
+    color: rgb(255, 217, 0);
+}
+.filterblackBack{
+    background-color: #1A1A1A;
+}
+@media (max-width:1300px){
+    .busBookingBox{
+        width: 90vw;
+    }
+}

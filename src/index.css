@@ -1,3 +1,165 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@media (max-width:768px){
+  .react-calendar{
+    background-color: #f6f9fc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .react-calendar__month-view__days{
+    height: 16rem;
+  }
+}
+
+.react-calendar__navigation{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 .3rem;
+  font-weight: 600;
+  background-color: #33a1fb;
+}
+.react-calendar__navigation__arrow{
+  margin: 0 0.7rem;
+  font-size: 2rem;
+}
+.react-calendar__month-view__weekdays__weekday{
+  text-align: center;
+}
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.rotate45{
+  transform: rotate(45deg);
+}
+.borderGray{
+  border: 1px solid rgba(128, 128, 128, 0.293);
+}
+.borderblack{
+  border: 1px solid black;
+}
+.borderBottomBlack{
+  border-bottom: 2px solid black;
+}
+.borderLeftGray{
+  border-left: 1px solid rgba(128, 128, 128, 0.293);
+}
+.borderTopGray{
+  border-top: 1px solid rgba(128, 128, 128, 0.293);
+}
+.borderDottedTopGray{
+  border-top: 1px dotted rgba(128, 128, 128, 0.293);
+}
+.borderBottomGray{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.293);
+}
+.borderDottedBottomGray{
+  border-bottom: 1px dotted rgba(128, 128, 128, 0.293);
+}
+.borderDottedTopBottomRed{
+  border-top:1px dotted #FFC4C2 ;
+  border-bottom: 1px dotted #FFC4C2;
+}
+.lowOpacityGrayBack{
+  background-color: rgba(128, 128, 128, 0.308);
+}
+.alignCenter{
+  align-items: center;
+}
+.textOverflowHide{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hoverGrayShadow{
+  transition: .8s;
+}
+.grayBlurShadow {
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.grayInsideShadow{
+  -webkit-box-shadow: inset 0px -7px 26px 0px rgba(0,0,0,0.47);
+-moz-box-shadow: inset 0px -7px 26px 0px rgba(0,0,0,0.47);
+box-shadow: inset 0px -7px 26px 0px rgba(0,0,0,0.47);
+}
+.hoverGrayShadow:hover{
+  -webkit-box-shadow: 0px 0px 11px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
+}
+.arrowAnime{
+  transition: .5s;
+}
+.blueText{
+  color: #008CFF;
+}
+.greenText{
+  color: #249993;
+}
+.blueBack{
+  background-color: #0088FF;
+}
+.blueBorderBottom{
+  border-bottom: 4px solid #0088FF;
+}
+.blueBorder{
+  border: 1px solid blue;
+}
+.gradientBlueBack{
+  background: rgb(77,171,253);
+background: linear-gradient(94deg, rgba(77,171,253,1) 0%, rgba(12,97,244,1) 65%);
+}
+.yellowback{
+  background-color: #F1B933;
+}
+.grayBack{
+  background-color: #F4F4F4;
+}
+.fullHeightInVh{
+  min-height: 100vh;
+}
+.mobReviewBox{
+  min-height: 120vh;
+}
+.fullWidthInVw{
+  width: 100vw;
+}
+.payWidth{
+  min-width: 40rem;
+  max-width: 70rem;
+}
+.payBtn{
+  width: 50%;
+}
+@media (max-width:820px){
+  .payBtn{
+      width: 100%;
+  }
+}
